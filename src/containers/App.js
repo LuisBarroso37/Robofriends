@@ -3,6 +3,7 @@ import CardList from '../components/Cardlist';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
+import Header from '../components/Header';
 import './App.css';
 import { setSearchField, requestRobots } from '../actions';
 import { connect } from 'react-redux';
@@ -39,7 +40,7 @@ class App extends Component {
         } else {
             return (
                 <div className='tc'>
-                    <h1 className='f1'>RoboFriends</h1>
+                    <Header />
                     <SearchBox searchChange={onSearchChange}/>
                     <Scroll>
                         <ErrorBoundary>

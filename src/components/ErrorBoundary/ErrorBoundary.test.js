@@ -13,9 +13,8 @@ it('expect hasError initial state to be false', () => {
 });
 
 it('expect hasError state to be true if componentDidCatch is run', () => { 
-    const wrapper = shallow(
-        <ErrorBoundary />
-    );
+    const wrapper = shallow(<ErrorBoundary />);
     wrapper.setState({ hasError: true });
+    
     expect(wrapper).toMatchSnapshot();
 });

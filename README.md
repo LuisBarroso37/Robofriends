@@ -1,6 +1,6 @@
 ## Robofriends 
 
-Simple web app which displays fake users' avatars, name and email and allows these users to be searched over dynamically by using the search bar.
+Simple web app which displays fake users' avatars, names and emails and allows these users to be searched over dynamically by using the search bar.
 
 ### Instructions
 To run this app in local environment, in the project directory
@@ -10,7 +10,9 @@ To run this app in local environment, in the project directory
 
 ### Information
 
-This app was created by using React, Redux, Tachyons, Robohash API and JSONPlaceholder API.
+This app was created by using Typescript, React, Redux, Tachyons, Robohash API and JSONPlaceholder API.
+
+Testing was done using Jest. 
 
 [RoboHash](https://robohash.org/) - This is a very simple and handy web service that makes it easy to get unique avatars for users by randomly generating robots, monsters, cats, etc.
 

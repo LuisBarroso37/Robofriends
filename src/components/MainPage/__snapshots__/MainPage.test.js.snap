@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render MainPage without crashing 1`] = `ShallowWrapper {}`;
+exports[`MainPage component different render when isPending is true 1`] = `ShallowWrapper {}`;
+
+exports[`MainPage component render MainPage without crashing 1`] = `ShallowWrapper {}`;

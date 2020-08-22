@@ -5,21 +5,22 @@ import Scroll from '../Scroll/Scroll';
 import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 import Header from '../Header/Header';
 import './MainPage.css';
+import { Props, IRobot } from '../../interfaces';
 
-class MainPage extends Component {
-    componentDidMount() {
+class MainPage extends Component<Props, {}> {
+    componentDidMount(): void {
         this.props.onRequestRobots();
     }
 
-    filterRobots = () => {
+    filterRobots = () : Array<IRobot> => {
         const { robots, searchField } = this.props;
-        console.log(robots);
+        
         return robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchField.toLowerCase());
         });
     }
 
-    render() {
+    render(): JSX.Element {
         const { onSearchChange, isPending } = this.props
 
         return (

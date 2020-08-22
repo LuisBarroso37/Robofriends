@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Header extends Component {
     // Prevents the title from being re-rendered when any changes happen
-    shouldComponentUpdate(nextProps, nextState) {
+    shouldComponentUpdate() {
         return false;
     }
 
